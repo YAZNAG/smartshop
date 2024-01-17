@@ -1,0 +1,83 @@
+/* path/to/css/home.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+div {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Partie 1: Navigation */
+div > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    max-width: 100px;
+    height: auto;
+}
+
+select, input[type="text"] {
+    padding: 8px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Partie 2: Liens vers les autres pages */
+div > div > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+ul li {
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff6600;
+}
+/* public/css/home.css */
+
+.product-section,
+.category-section {
+    width: 70%;
+    float: left;
+}
+
+.product-list,
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 30%;
+    margin: 10px;
+}
+
+.category {
+    margin: 10px;
+}
+
+/* Ajoutez d'autres styles selon vos besoins */
