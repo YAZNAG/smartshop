@@ -4,7 +4,7 @@ namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
-
+use Illuminate\Foundation\Auth\ThrottlesLogins;
 class Kernel extends ConsoleKernel
 {
     /**
@@ -24,4 +24,13 @@ class Kernel extends ConsoleKernel
 
         require base_path('routes/console.php');
     }
+    
+
+    protected $middlewareGroups = [
+    'web' => [
+        // ... other middleware
+        ThrottleRequestsWithRedis::class,
+    ],
+];
+
 }
